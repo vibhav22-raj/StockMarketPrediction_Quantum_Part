@@ -543,7 +543,7 @@ We welcome contributions from the quantum ML community!
 
 ## 👨‍💻 Author
 
-**[Vibhav Raj]**  
+**Vibhav Raj**  
 🔬 Quantum ML Engineer | 📈 Financial Technology Enthusiast
 
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=social&logo=github)](https://github.com/vibhav22-raj)
