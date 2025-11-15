@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quantum Stock Prediction - Home</title>
+    <style>
+        /* ========== GLOBAL STYLES ========== */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 40px 50px;
+            width: 500px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #38bdf8;
+            margin-bottom: 10px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #38bdf8, 0 0 20px #06b6d4; }
+            to { text-shadow: 0 0 20px #06b6d4, 0 0 40px #3b82f6; }
+        }
+
+        p {
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        /* ========== FORM STYLES ========== */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        input[type="file"] {
+            background: rgba(255,255,255,0.1);
+            border: 2px dashed #38bdf8;
+            border-radius: 10px;
+            padding: 15px;
+            width: 100%;
+            color: #cbd5e1;
+            cursor: pointer;
+            transition: background 0.3s, border 0.3s;
+        }
+
+        input[type="file"]:hover {
+            background: rgba(56,189,248,0.1);
+            border-color: #06b6d4;
+        }
+
+        select {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 15px;
+            width: 100%;
+            font-size: 15px;
+            outline: none;
+            appearance: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        select:hover {
+            background: rgba(56,189,248,0.15);
+        }
+
+        /* ========== BUTTON STYLES ========== */
+        button {
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(59,130,246,0.3);
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(59,130,246,0.5);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        .quantum-icon {
+            font-size: 50px;
+            animation: rotate 6s linear infinite;
+            margin-bottom: 15px;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            margin-top: 25px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 85%;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="quantum-icon">⚛️</div>
+        <h1>Quantum Stock Prediction</h1>
+        <p>Upload your stock CSV file and let the Quantum AI model predict future trends 📈</p>
+
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv" required>
+
+            <select name="model_type" required>
+                <option value="quantum">⚛️ Quantum-Hybrid Model</option>
+            </select>
+
+            <button type="submit">🚀 Run Quantum Prediction</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
