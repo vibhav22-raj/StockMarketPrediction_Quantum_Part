@@ -171,10 +171,6 @@ StockMarketPrediction_Quantum_Part/
 ├── static/                                   # Static assets
 │   ├── css/
 │   │   └── styles.css                        # Custom styling
-│   ├── js/
-│   │   └── main.js                           # Frontend logic
-│   └── images/
-│       └── logo.png                          # Project logo
 │
 │
 ├── uploads/                                  # User-uploaded CSV files
@@ -550,7 +546,7 @@ We welcome contributions from the quantum ML community!
 **[Vibhav Raj]**  
 🔬 Quantum ML Engineer | 📈 Financial Technology Enthusiast
 
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=social&logo=github)](https://github.com/yourusername)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=social&logo=github)](https://github.com/vibhav22-raj)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/vibhavraj/)
 
 
